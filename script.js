@@ -136,3 +136,15 @@ for (let i = 0; i < finances.length; i++) {
  }
 
  average = Math.round((netChange / netValue.length) * 100) 
+
+ var analysis = `Financial analysis
+-----------------------------
+Total Months; ${numberOfMonths}
+Total; $${total}
+Average Change; $${average}
+Greatest Increase
+`
+console.log(analysis)
+console.log(greatest[1])
+console.log(least[1])
+console.log(netChange)
