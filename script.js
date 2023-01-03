@@ -89,3 +89,5 @@ var finances = [
 
 var numberOfMonths = finances.length;
 console.log(numberOfMonths)
+
+let
