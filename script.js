@@ -105,4 +105,7 @@ let greatestIndex;
 var numberOfMonths = finances.length;
 console.log(numberOfMonths)
 
+for (let i = 0; i < finances.length; i++) {
+    total += finances[i][1];
+
 
