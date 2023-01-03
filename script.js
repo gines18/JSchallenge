@@ -107,5 +107,12 @@ console.log(numberOfMonths)
 
 for (let i = 0; i < finances.length; i++) {
     total += finances[i][1];
+}
 
-
+for (let i = 0; i < finances.length; i++) {
+    if (i >= 1) {
+        netValue.push(finances[i][1] - finances[i - 1][1])
+        if (netValue[i] > greatest[1]) {
+            greatest[1] = netValue[i]
+            greatestIndex = i      
+        } 
