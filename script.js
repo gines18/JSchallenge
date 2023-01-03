@@ -116,3 +116,23 @@ for (let i = 0; i < finances.length; i++) {
             greatest[1] = netValue[i]
             greatestIndex = i      
         } 
+
+        else if(netValue[i] < least[1] ) {
+            least[1] = netValue[i]
+            leastIndex = i
+        }
+    }
+    else {
+        netValue.push(finances[i])
+    } 
+
+ }
+
+ greatest = finances[greatestIndex]
+ least = finances[leastIndex]
+
+ for (let i = 0; i < netValue.length; i++) {
+    netChange += netValue[i];
+ }
+
+ average = Math.round((netChange / netValue.length) * 100) 
