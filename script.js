@@ -87,7 +87,22 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+
+let total = 0;
+let average;
+let change = 0;
+
+let previousMonth = 0;
+
+let netValue = [];
+let netChange = 0;
+let least = ["", 999999999];
+let greatest = ["", 0];
+let leastIndex;
+let greatestIndex;
+
+
 var numberOfMonths = finances.length;
 console.log(numberOfMonths)
 
-let
+
