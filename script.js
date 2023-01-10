@@ -103,7 +103,7 @@ let greatestIndex;
 
 
 var numberOfMonths = finances.length;
-console.log(numberOfMonths)
+
 
 for (let i = 0; i < finances.length; i++) {
     total += finances[i][1];
@@ -128,14 +128,6 @@ for (let i = 0; i < finances.length; i++) {
 
  }
 
-//  greatest = finances[greatestIndex]
-//  least = finances[leastIndex]
-
-//  for (let i = 0; i < netValue.length; i++) {
-//     netChange += netValue[i];
-//  }
-
-//  average = Math.round((netChange / netValue.length) * 100) 
 
 let changeSum = 0;
 for (let i = 1; i < finances.length; i++) {
@@ -146,10 +138,12 @@ var averageChange =((changeSum/85).toFixed(2))
 
  var analysis = `Financial analysis
 -----------------------------
-Total Months; ${numberOfMonths}
-Total; $${total}
-Average Change; $${averageChange}
-Greatest Increase
+Total Months: ${numberOfMonths}
+Total: $${total}
+Average Change: $${averageChange}
+Greatest Increase in Profits: $${greatest}
+Greatest Decrease in Profits: $${least}
+
 `
 console.log(analysis)
 console.log(greatest[1])
